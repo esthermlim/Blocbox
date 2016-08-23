@@ -5,7 +5,11 @@ body {
 	font-family: "Muli" Helvetica, Arial, sans-serif;
 	color:#33333;
 }
-h2, h3, h4, h5, h6 {
+h1, h2 {
+	font-family: "Muli";
+}
+
+h3, h4, h5, h6 {
 	font-family: "Crimson Text", Helvetica, Arial, sans-serif;
 }
 h2 {
