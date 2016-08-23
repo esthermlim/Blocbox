@@ -44,7 +44,7 @@ p {
 	float:left;
 	position: relative;
 	min-height: 1px;
-	margin: 0 2% 20px;
+	margin: 0 20px;
 }
 @media (min-width: 768px) {
 	.container {
@@ -70,14 +70,18 @@ p {
 		width:1170px;
 	}
 }
+@media (min-width: 2000px) {
+	.container {
+		width:1920px;
+	}
+}
 
 /* HEADER */
 header {
-	height: 923px;
+	height: 900px;
 	width: 100%;
 	font-family: "Muli";
 	color: #FFFFFF;
-  	background: #34495E;
   	background-image: url("../images/hero.png");
   	background-repeat: no-repeat;
   	background-size: 100% 100%;
@@ -90,7 +94,7 @@ header nav {
    display:inline;
    text-align: right;
    float:right;
-   margin:0;
+   margin: 30px;
  }
  header nav ul > li {
    list-style-type: none;
@@ -117,19 +121,47 @@ header nav {
    display:block;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:70px;
    font-weight: normal;
-   margin:95px 0 0;
+   margin:210px 0 0 10px;
  }
  header .hero p {
-   font-size: 22px;
-   line-height: 26px;
-   font-weight: 100;
-   margin:10px 0 40px;
+   font-size: 25px;
+   line-height: 35px;
+   margin:10px 0 40px 10px;
 }
-img {
+header .site-logo img {
+	top:20px;
+
+
+}
+img  {
 	right: 0;
 	position: absolute;
 	border-style: none; 
+	top: 130px;
 }
+
+/* BUTTONS */
+.btn {
+	border-radius: 8px;
+	color:#FFFFFF;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 10px 30px;
+	background: #4893ff;
+	border: 2px solid #4893ff;
+	box-shadow: 0px 2px 0px 0px #2f77e0;
+	margin: 0 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
