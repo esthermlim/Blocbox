@@ -69,6 +69,7 @@ p {
 
 /* HEADER */
 header {
+	height: 923px;
 	width: 100%;
 	font-family: "Muli";
 	color: #FFFFFF;
@@ -110,7 +111,6 @@ header nav {
  header .hero {
    text-align: left;
    display:block;
-   position: relative;
  }
  header .hero h1 {
    font-size:48px;
@@ -122,8 +122,10 @@ header nav {
    line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
- }
- header .hero img {
-   display: block;
-   margin:3em auto 0;
- }
+}
+img {
+	right: 0;
+	position: absolute;
+	border-style: none; 
+}
+
