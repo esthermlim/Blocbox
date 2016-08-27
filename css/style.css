@@ -135,7 +135,7 @@ header nav {
 	top:20px;
 
 }
- img {
+ img.laptop{
 	right: 0;
 	position: absolute;
 	border-style: none; 
@@ -349,6 +349,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828a9f', end
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
+   font-family: "Muli";
  }
 
 footer nav ul li {
@@ -365,7 +366,7 @@ footer nav ul li a {
      padding: 2em 0;
      text-align: left;
    }
-   footer .site-logo{
+   footer .logo{
      padding: 1em 0 2em 1.5em;
      position: absolute;
      top: 0px;
