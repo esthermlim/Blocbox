@@ -17,22 +17,42 @@
 <body class="dashboard">
    <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
-      <a href="#" class="site-logo"><img srf="images/site-logo.png" /></a>
+      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
       <div class="items">
-         <p>Items</p>
+         <p>Items <span class="fa fa-chevron-down"></span></p>
          <ul>
-            <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+         <li class="active"><span class='orange-rectangle'></span><a href="#"><i class="fa fa-th-large"></i>All Items</a></li>
          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
          <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
        </ul>
-       <p>Boxes</p>
-       <ul>
-         <li><a href="#"><i class="fa fa-cubes"></i>All Boxes</a></li>
-         <li><a href="#"><i class="fa fa-cube"></i>Box 1</a></li>
-         <li><a href="#"><i class="fa fa-plus"></i>Add New</a></li>
-       </ul>
-     </div>
+         <p>Boxes<span class="fa fa-chevron-down"></span></p>
+         <ul>
+            <li><a href="#"><i class="fa fa-cubes"></i>All Boxes</a></li>
+            <li><a href="#"><i class="fa fa-cube"></i>Box 1</a></li>
+            <li><a href="#"><i class="fa fa-plus"></i>Add New</a></li>
+         </ul>
+         </div>
+         <div class="settings">
+            <p>Partners<span class="fa fa-chevron-down"></span></p>
+            <ul>
+               <li>
+                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+                  <span>Jane D.</span><span class='online'></span>
+               </li>
+               <li>
+                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+                  <span>John S.</span>
+               </li>
+               <li>
+                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+                  <span>Bob P.</span>
+               </li>
+               <li>
+                  <a href="#"><i class="fa fa-plus"></i>Add New</a>
+               </li>
+            </ul>
+         </div>
    </nav>
    <main role="main">
       <!-- CONTENT -->
@@ -51,7 +71,7 @@
             </div>
             <div class="content-item">
                <div class="item-box">
-                  <h2><img class="favicon"><img src="https://www.airbnb.com/favicon.ico"><a href="#">airbnb.com</a></h2>
+                  <h2><img class="favicon" src="https://www.airbnb.com/favicon.ico"><a href="#">airbnb.com</a></h2>
                   <p>Vacation Rentals, Homes, Apartments &amp; Rooms for Rent &mdash; Airbnb</p>
                </div>
             </div>
