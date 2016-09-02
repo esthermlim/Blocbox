@@ -451,9 +451,12 @@ footer nav ul li a {
 	display: block;
 	text-align: center;
 }
+/* ITEMS */
+
 .left-nav .items {
 	padding: 0;
 }
+
 .left-nav .items p {
 	font-weight: 600;
 	text-transform: uppercase;
@@ -470,6 +473,7 @@ footer nav ul li a {
 .left-nav .items .active {
 	background-color: #30343e;
 	position: relative;
+  height: 40px;
 }
 
 .left-nav .items .orange-rectangle {
@@ -479,6 +483,34 @@ footer nav ul li a {
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+.left-nav .settings .active {
+  background-color: #30343e;
+  position: relative;
+  height: 40px;
+}
+
+.left-nav .settings .orange-rectangle {
+  background-color: #d98409;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.left-nav .boxes .active {
+  background-color: #30343e;
+  position: relative;
+  height: 40px;
+}
+
+.left-nav .boxes .orange-rectangle {
+  background-color: #d98409;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .left-nav .items ul{
 	padding: 0;
@@ -492,9 +524,8 @@ footer nav ul li a {
 	font-size: 15px;
 	vertical-align: middle;
 	padding-left: 30px;
-	height: 30px;
-	line-height: 30px;
-	margin: 15px 0;
+	height: 40px;
+	line-height: 40px;
 	box-sizing: border-box;
 }
 .left-nav .items ul li a {
@@ -503,6 +534,49 @@ footer nav ul li a {
 	font-weight: 100;
 }
 .left-nav .items ul li a i {
+	width: 16px;
+	text-align: center;
+	margin-right: 8px;
+}
+/* BOXES */
+.left-nav .boxes {
+	padding: 0;
+}
+.left-nav .boxes p {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 10px 0 0 25px;
+
+}
+.left-nav .boxes p .fa {
+	font-size: 12px;
+	float: right;
+	margin-right: 45px;
+}
+.left-nav .boxes ul{
+	padding: 0;
+}
+.left-nav .boxes ul li(:first-child),.left-nav .boxes ul li(:last-child) {
+	margin: 0;
+}
+.left-nav .boxes ul li {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	vertical-align: middle;
+	padding-left: 30px;
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+.left-nav .boxes ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 100;
+}
+.left-nav .boxes ul li a i {
 	width: 16px;
 	text-align: center;
 	margin-right: 8px;
@@ -537,8 +611,9 @@ footer nav ul li a {
 	font-size: 15px;
 	vertical-align: top;
 	padding-left: 30px;
-	height: 30px;
-	margin: 15px 0;
+	height: 40px;
+  line-height: 40px;
+	
 }
 .left-nav .settings .settings-menu li a {
 	color: #FFFFFF;
@@ -594,7 +669,7 @@ footer nav ul li a {
  .left-nav .account p {
    display: inline-block;
    vertical-align: top;
-   padding: 8px 0 0;
+   padding: 10px 0 0 5px;
    font-weight: 400;
    margin: 0;
  }
@@ -602,9 +677,8 @@ footer nav ul li a {
    color:#FFFFFF;
    text-decoration: none;
    text-align: right;
-   float: right;
-   margin-right:10px;
-   margin-top:8px;
+   margin-right:14px;
+   margin-top:10px;
  }
 
  /* CONTENT */

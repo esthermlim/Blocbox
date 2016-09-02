@@ -4,7 +4,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
-   <title>Dashbaord | Blocbox</title>
+   <title>Dashboard | Blocbox</title>
 
    	<!-- Google Fonts -->
    	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Muli:300,300i,400,400i" rel="stylesheet">
@@ -22,22 +22,35 @@
    <nav id="left-nav" class="left-nav">
       <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
       <div class="items">
-         <p>Items <span class="fa fa-chevron-down"></span></p>
-         <ul>
-         <li class="active"><span class='orange-rectangle'></span><a href="#"><i class="fa fa-th-large"></i>All Items</a></li>
-         <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-         <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
-         <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
-       </ul>
-         <p>Boxes<span class="fa fa-chevron-down"></span></p>
-         <ul>
-            <li><a href="#"><i class="fa fa-cubes"></i>All Boxes</a></li>
-            <li><a href="#"><i class="fa fa-cube"></i>Box 1</a></li>
-            <li><a href="#"><i class="fa fa-plus"></i>Add New</a></li>
-         </ul>
+         <div class="items-button">
+            <p>Items<span class="fa fa-chevron-down menu-toggle"></span></p>
          </div>
+         <div class="button-hide">
+            <ul>
+               <li></span><a href="#"><i class="fa fa-th-large"></i>All Items</a></li>
+               <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+               <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
+               <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="boxes">
+         <div class="items-button">
+            <p>Boxes<span class="fa fa-chevron-down menu-toggle"></span></p>
+         </div>
+         <div class="button-hide">
+            <ul>
+               <li><a href="#"><i class="fa fa-cubes"></i>All Boxes</a></li>
+               <li><a href="#"><i class="fa fa-cube"></i>Box 1</a></li>
+               <li><a href="#"><i class="fa fa-plus"></i>Add New</a></li>
+            </ul>
+         </div>
+      </div>
          <div class="settings">
-            <p>Partners<span class="fa fa-chevron-down"></span></p>
+            <div class="items-button">
+               <p>Partners<span class="fa fa-chevron-down menu-toggle"></span></p>
+            </div>
+         <div class="button-hide">
             <ul class='settings-menu'>
                <li>
                   <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
@@ -55,6 +68,8 @@
                   <a href="#"><i class="fa fa-plus"></i>Add New</a>
                </li>
             </ul>
+         </div>
+         </div>
                <div class="account">
                   <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
                      <p>Joey Kirk</p>
@@ -157,12 +172,25 @@
    <script src="js/jquery-3.1.0.min.js"></script>
    <script src="js/dropit.js"></script>
    <script type="text/javascript">
-      $(".menu").dropit();
-      $(".account-settings").dropit();
-      $( "#menu" ).click(function() {
-         $("#left-nav").toggleClass("open", 200);
+     $(".menu").dropit();
+     $(".account-settings").dropit();
+     $( "#menu" ).click(function() {
+       $("#left-nav").toggleClass("open", 200);
      });
-      </script>
+
+     $(".menu-toggle").click(function(ev) {
+         var $list = $(ev.currentTarget).parent().parent().parent().find(".button-hide").toggle();
+      });
+     $(".left-nav li").on("mouseenter", function() {
+            $(this).prepend("<span class='orange-rectangle'></span>")
+            $(this).addClass("active");
+      });
+      $(".left-nav li").on("mouseleave", function() {
+            $(this).children().remove(".orange-rectangle");
+            $(this).removeClass("active");
+      });
+
+   </script>
 </body>
 </html>
 

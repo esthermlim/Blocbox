@@ -14,7 +14,11 @@
     float: right;
     display: inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-trigger { 
+  position: relative; 
+  right: 30px;
+  top: 10px;
+}
 .dropit .dropit-submenu {
     position: absolute;
     top: 100%;
@@ -59,8 +63,8 @@
  }
 
  .account-settings .dropit-open .dropit-submenu {
-   top: -150px;
-   right: -30px;
+   top: -169px;
+   right: -71px;
  }
 
  .account-settings .dropit-open .dropit-submenu:after {
@@ -72,8 +76,8 @@
    display: block;
    width: 0;
    z-index: 1;
-   top: 121px;
-   right: 39px;
+   top: 137px;
+   right: 84px;
  }
 
  .account-settings {
